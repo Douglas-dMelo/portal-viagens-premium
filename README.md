@@ -30,9 +30,9 @@ Este projeto demonstra capacidade de:
 
 > Adicione suas imagens em `docs/images/` e mantenha os nomes abaixo.
 
-![Home](docs/images/home.png)
-![Listagem de Destinos](docs/images/destinos.png)
-![Detalhe do Destino](docs/images/destino-detalhe.png)
+![Home](public/images/home.png)
+![Listagem de Destinos](public/images/destinos.png)
+![Detalhe do Destino](public/images/destino-detalhe.png)
 
 ## Funcionalidades
 
