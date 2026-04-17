@@ -28,8 +28,6 @@ Este projeto demonstra capacidade de:
 
 ## Screenshots
 
-> Adicione suas imagens em `docs/images/` e mantenha os nomes abaixo.
-
 ![Home](public/images/home.png)
 ![Listagem de Destinos](public/images/destinos.png)
 ![Detalhe do Destino](public/images/destino-detalhe.png)
