@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Atlas Prive | Premium Travel Portal
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
+![React](https://img.shields.io/badge/React-19-20232A?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/Styling-CSS%20Modules-264de4)
+![Status](https://img.shields.io/badge/status-concluido-2ea44f)
 
-First, run the development server:
+Aplicacao web desenvolvida com **Next.js (App Router)** para simular um portal editorial de viagens com estetic a premium.  
+O projeto foca em **componentizacao, rotas dinamicas e UX visual refinada**.
+
+## Resumo (Recruiter-Friendly)
+
+Este projeto demonstra capacidade de:
+- Construir aplicacao moderna com Next.js e TypeScript
+- Estruturar layout reutilizavel e componentes desacoplados
+- Implementar roteamento dinamico baseado em arquivo
+- Aplicar identidade visual consistente com CSS Modules
+- Organizar codigo com separacao clara de responsabilidades
+
+## Demo
+
+- Ambiente local: `http://localhost:3000`
+- Rotas principais:
+  - `/`
+  - `/destinos`
+  - `/destinos/[slug]`
+
+## Screenshots
+
+> Adicione suas imagens em `docs/images/` e mantenha os nomes abaixo.
+
+![Home](docs/images/home.png)
+![Listagem de Destinos](docs/images/destinos.png)
+![Detalhe do Destino](docs/images/destino-detalhe.png)
+
+## Funcionalidades
+
+- Home com apresentacao do portal e CTA para navegacao
+- Listagem com 4+ destinos turisticos
+- Pagina dinamica por destino (`[slug]`)
+- Menu global com `next/link` em todas as paginas
+- Card de destino com imagem, nome e chamada editorial
+- Pagina de fallback para destino inexistente (`not-found`)
+
+## Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- CSS Modules
+- ESLint
+
+## Arquitetura de Pastas
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+portal-viagens-premium/
+├─ app/
+│  ├─ destinos/
+│  │  ├─ [slug]/
+│  │  │  ├─ page.tsx
+│  │  │  └─ destinoDetalhe.module.css
+│  │  ├─ page.tsx
+│  │  └─ destinos.module.css
+│  ├─ globals.css
+│  ├─ layout.tsx
+│  ├─ not-found.tsx
+│  ├─ not-found.module.css
+│  ├─ page.tsx
+│  └─ page.module.css
+├─ components/
+│  ├─ CardDestino/
+│  └─ Layout/
+├─ data/
+│  └─ destinos.ts
+├─ public/images/
+└─ docs/images/

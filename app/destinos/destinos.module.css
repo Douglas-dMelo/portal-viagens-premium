@@ -1,0 +1,42 @@
+.wrapper {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.header {
+  display: grid;
+  gap: 0.7rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  font-size: 0.74rem;
+  color: var(--color-ink-soft);
+}
+
+.header h1 {
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2.1rem, 4.6vw, 3.3rem);
+  line-height: 0.96;
+  max-width: 17ch;
+}
+
+.header p {
+  color: var(--color-ink-soft);
+  max-width: 62ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+@media (max-width: 880px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

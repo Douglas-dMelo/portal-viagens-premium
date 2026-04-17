@@ -1,0 +1,141 @@
+.wrapper {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.backLink {
+  width: fit-content;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-accent);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.95fr) minmax(0, 1.15fr);
+  gap: 1.25rem;
+}
+
+.heroImageWrap {
+  position: relative;
+  min-height: 360px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--color-line);
+  box-shadow: 0 26px 38px -30px rgba(38, 32, 24, 0.8);
+}
+
+.heroImage {
+  object-fit: cover;
+}
+
+.heroContent {
+  border-radius: 24px;
+  border: 1px solid var(--color-line);
+  background: #f9f5ed;
+  padding: clamp(1.2rem, 3vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.location {
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.74rem;
+  color: var(--color-ink-soft);
+}
+
+.heroContent h1 {
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 0.96;
+}
+
+.headline {
+  color: var(--color-ink-soft);
+  max-width: 48ch;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-top: 0.8rem;
+}
+
+.metaGrid div {
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  padding: 0.7rem 0.8rem;
+  background: #fffaf2;
+}
+
+.metaGrid span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: var(--color-ink-soft);
+}
+
+.metaGrid p {
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1;
+  margin-top: 0.3rem;
+}
+
+.storyBlock {
+  border: 1px solid var(--color-line);
+  border-radius: 22px;
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  background: linear-gradient(180deg, #faf5ea 0%, #f6f1e6 100%);
+  display: grid;
+  gap: 1rem;
+}
+
+.storyBlock p {
+  color: #3d4645;
+}
+
+.highlights {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.highlights h2 {
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(1.8rem, 3vw, 2.3rem);
+  line-height: 0.95;
+}
+
+.highlights ul {
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.highlights li {
+  border: 1px solid var(--color-line);
+  border-radius: 14px;
+  background: #f8f3e8;
+  padding: 0.8rem 0.9rem;
+}
+
+@media (max-width: 940px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .heroImageWrap {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 560px) {
+  .metaGrid {
+    grid-template-columns: 1fr;
+  }
+}

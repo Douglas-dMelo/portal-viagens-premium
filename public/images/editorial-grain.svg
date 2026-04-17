@@ -1,0 +1,11 @@
+<svg width="900" height="500" viewBox="0 0 900 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="noise" x="0" y="0" width="70" height="70" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="1" fill="#A58B67" fill-opacity="0.08" />
+      <circle cx="28" cy="21" r="1" fill="#8D775A" fill-opacity="0.07" />
+      <circle cx="56" cy="38" r="1" fill="#B29A75" fill-opacity="0.08" />
+      <circle cx="44" cy="64" r="1" fill="#76624A" fill-opacity="0.09" />
+    </pattern>
+  </defs>
+  <rect width="900" height="500" fill="url(#noise)" />
+</svg>
